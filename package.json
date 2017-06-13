@@ -1,0 +1,34 @@
+{
+  "name": "engined-http",
+  "version": "0.0.1",
+  "description": "http agent service for engined",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfsghost/engined-http.git"
+  },
+  "keywords": [
+    "service",
+    "engined",
+    "http"
+  ],
+  "engines": {
+    "node": ">=7.4"
+  },
+  "author": "Fred Chien <cfsghost@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfsghost/engined-http/issues"
+  },
+  "homepage": "https://github.com/cfsghost/engined-http#readme",
+  "dependencies": {
+    "engined": "0.0.2",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.0",
+    "koa2-cors": "^2.0.3"
+  }
+}
