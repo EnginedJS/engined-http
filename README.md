@@ -117,6 +117,35 @@ class MyHTTPService extends HTTPService{{ port: 8080 }} {
 }
 ```
 
+## Setup Views Renderer
+
+By override `setupViews` method of service, to enable and setup prefered view renderer.
+
+The returned object for settings:
+
+* path: Where your views are located. Must be an absolute path. All rendered views are relative to this path
+* templateEngine: The loaded module of template engine
+* options: options object as parameter to `koa-views`
+
+```javascript
+class MyHTTPService extends HTTPService{{ port: 8080 }} {
+
+	async setupViews() {
+
+		return {
+			path: path.join(__dirname, '..', 'views'),
+			templateEngine: require('pug'),
+			options: {
+				extension: 'pug',
+				map: {
+					html: 'pug'
+				}
+			}
+		};
+	}
+}
+```
+
 ## License
 Licensed under the MIT License
  
