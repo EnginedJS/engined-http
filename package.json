@@ -27,7 +27,7 @@
   "dependencies": {
     "consolidate": "^0.14.5",
     "engined": "0.0.2",
-    "jsonwebtoken": "^7.4.3",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.2.0",
     "koa-body": "^2.3.0",
     "koa-logger": "^3.0.0",
